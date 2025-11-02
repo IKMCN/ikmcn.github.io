@@ -1,0 +1,70 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 2rem;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+code {
+  background: #eee;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.sidebar {
+  flex: 0 0 220px;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  color: #4F46E5;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+}
