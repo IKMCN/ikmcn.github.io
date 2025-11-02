@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning LINQ Basics - Learning Log</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <h2><a href="index.html" style="text-decoration: none; color: inherit;">🏠 Home</a></h2>
+      
+      <hr style="margin: 1rem 0;">
+      
+      <h3 style="font-size: 1rem;">🧪 QA & Testing</h3>
+      <ul>
+        <li><a href="manual-testing.html">Manual Testing</a></li>
+        <li><a href="test-automation.html">Test Automation</a></li>
+        <li><a href="bug-tracking.html">Bug Tracking</a></li>
+        <li><a href="api-testing.html">API Testing</a></li>
+        <li><a href="performance-testing.html">Performance Testing</a></li>
+      </ul>
+      
+      <hr style="margin: 1rem 0;">
+      
+      <h3 style="font-size: 1rem;">💻 Development</h3>
+      <ul>
+        <li><a href="csharp-dotnet.html">C# & .NET</a></li>
+        <li><a href="database-sql.html">Database & SQL</a></li>
+        <li><a href="git-version-control.html">Git & Version Control</a></li>
+        <li><a href="clean-code.html">Clean Code</a></li>
+        <li><a href="design-patterns.html">Design Patterns</a></li>
+      </ul>
+      
+      <hr style="margin: 1rem 0;">
+      
+      <h3 style="font-size: 1rem;">🚀 Projects</h3>
+      <ul>
+        <li><a href="student-registration.html">Student Registration</a></li>
+        <li><a href="portfolio-projects.html">Portfolio Projects</a></li>
+        <li><a href="code-challenges.html">Code Challenges</a></li>
+      </ul>
+      
+      <hr style="margin: 1rem 0;">
+      
+      <h3 style="font-size: 1rem;">📚 Learning</h3>
+      <ul>
+        <li><a href="daily-notes.html">Daily Notes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="career-development.html">Career Development</a></li>
+        <li><a href="course-notes.html">Course Notes</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h1>Learning LINQ Basics</h1>
+      
+      <p class="metadata">
+        📅 November 3, 2025 | 🏷️ 
+        <span class="tags">
+          <span class="tag">C#</span>
+          <span class="tag">LINQ</span>
+        </span>
+      </p>
+
+      <hr>
+
+      <h2>What I Learned</h2>
+      
+      <p>Today I focused on understanding the basics of LINQ (Language Integrated Query) in C#. LINQ provides a consistent way to query different data sources using a SQL-like syntax directly in C#.</p>
+
+      <h2>Basic LINQ Queries</h2>
+      
+      <p>LINQ has two main syntaxes: query syntax and method syntax. I practiced both today.</p>
+
+      <h3>Method Syntax</h3>
+      
+      <pre><code>var numbers = new List&lt;int&gt; { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+// Filter even numbers
+var evenNumbers = numbers.Where(n => n % 2 == 0);
+
+// Get numbers greater than 5
+var greaterThanFive = numbers.Where(n => n > 5).ToList();
+
+// Select and transform
+var squaredNumbers = numbers.Select(n => n * n);</code></pre>
+
+      <p>The method syntax uses extension methods like Where, Select, OrderBy, etc. It's more concise and commonly used.</p>
+
+      <h3>Query Syntax</h3>
+      
+      <pre><code>var numbers = new List&lt;int&gt; { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+// Same query using query syntax
+var evenNumbers = from n in numbers
+                  where n % 2 == 0
+                  select n;</code></pre>
+
+      <p>Query syntax looks more like SQL. It's less common but easier to read for complex queries.</p>
+
+      <h2>Working with Objects</h2>
+      
+      <p>I also practiced using LINQ with objects, which is more realistic for real applications.</p>
+
+      <pre><code>public class Student
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public decimal GPA { get; set; }
+}
+
+var students = new List&lt;Student&gt;
+{
+    new Student { Name = "Alice", Age = 20, GPA = 3.8m },
+    new Student { Name = "Bob", Age = 22, GPA = 3.2m },
+    new Student { Name = "Charlie", Age = 21, GPA = 3.9m }
+};
+
+// Get students with GPA above 3.5
+var topStudents = students.Where(s => s.GPA > 3.5m)
+                          .OrderByDescending(s => s.GPA)
+                          .ToList();
+
+// Get just the names
+var studentNames = students.Select(s => s.Name).ToList();</code></pre>
+
+      <h2>Common LINQ Methods I Learned</h2>
+      
+      <ul>
+        <li><code>Where()</code> - Filters elements based on a condition</li>
+        <li><code>Select()</code> - Projects each element into a new form</li>
+        <li><code>OrderBy()</code> / <code>OrderByDescending()</code> - Sorts elements</li>
+        <li><code>First()</code> / <code>FirstOrDefault()</code> - Gets the first element</li>
+        <li><code>Any()</code> - Checks if any element matches a condition</li>
+        <li><code>Count()</code> - Counts elements</li>
+        <li><code>ToList()</code> - Converts to a List</li>
+      </ul>
+
+      <h2>Key Takeaways</h2>
+      
+      <ul>
+        <li>LINQ makes filtering and transforming collections much easier</li>
+        <li>Method syntax is more common and more flexible</li>
+        <li>Always call <code>ToList()</code> or <code>ToArray()</code> if you want to execute the query immediately</li>
+        <li>LINQ queries are deferred - they don't execute until you enumerate them</li>
+      </ul>
+
+      <h2>What's Next</h2>
+      
+      <p>Tomorrow I want to explore more advanced LINQ operations like GroupBy, Join, and aggregation functions (Sum, Average, Max, Min).</p>
+
+      <hr>
+
+      <div style="display: flex; justify-content: space-between; padding: 1rem 0;">
+        <a href="index.html">← Back to Home</a>
+        <a href="all-entries.html">All Entries</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
