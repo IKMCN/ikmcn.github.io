@@ -1,0 +1,21 @@
+title: Ian McNamara
+description: Platform & IoT Engineering
+url: "https://ikmcn.github.io"
+baseurl: ""
+author: Ian McNamara
+email: ""
+github_username: ikmcn
+
+permalink: /:title/
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

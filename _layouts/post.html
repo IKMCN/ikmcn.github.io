@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<header class="article-header">
+  <a class="back-link" href="/writing/">← writing</a>
+  <div class="article-meta">
+    {% if page.category %}<span class="article-tag">{{ page.category }}</span>{% endif %}
+    <span class="article-date mono">{{ page.date | date: "%B %Y" }}</span>
+  </div>
+  <h1 class="article-title">{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="article-subtitle">{{ page.subtitle }}</p>{% endif %}
+</header>
+
+<article class="article-body">
+  {{ content }}
+</article>
+
+{% if page.next_title %}
+<div class="divider"></div>
+<div class="next-article">
+  <p class="next-label">Next</p>
+  <a class="next-title" href="{{ page.next_url }}">{{ page.next_title }} →</a>
+</div>
+{% endif %}

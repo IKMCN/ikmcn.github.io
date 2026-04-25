@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <p class="hero-tag mono">Platform &amp; IoT Engineering</p>
+  <h1 class="hero-title">Building systems that work<br><em>from hardware to cluster</em></h1>
+  <p class="hero-body">I design and build distributed IoT platforms — MQTT brokers, .NET APIs, PostgreSQL schemas, Kubernetes clusters, and the firmware that connects physical hardware to all of it. I write about how it's done.</p>
+  <div class="stack-pills">
+    <span class="pill">.NET / C#</span>
+    <span class="pill">MQTT</span>
+    <span class="pill">PostgreSQL</span>
+    <span class="pill">K3s</span>
+    <span class="pill">Proxmox</span>
+    <span class="pill">ESP32</span>
+    <span class="pill">Zabbix</span>
+    <span class="pill">Jenkins</span>
+  </div>
+</section>
+
+<p class="section-label mono">Featured project</p>
+
+<div class="featured-card">
+  <div class="card-meta">
+    <span class="card-status">In progress</span>
+    <span class="card-date mono">2025 – present</span>
+  </div>
+  <div class="card-title">Launderette IoT Platform</div>
+  <p class="card-body">A multi-tenant IoT management platform built from the ground up — .NET API, PostgreSQL, Mosquitto MQTT broker, Zabbix monitoring, Jenkins CI/CD, and a WPF load simulator capable of spawning thousands of concurrent machine clients. Physical hardware via WT32-ETH01.</p>
+  <div class="arch-strip">
+    <span class="arch-node">ESP32</span>
+    <span class="arch-arrow">→</span>
+    <span class="arch-node">MQTT</span>
+    <span class="arch-arrow">→</span>
+    <span class="arch-node">API</span>
+    <span class="arch-arrow">→</span>
+    <span class="arch-node">PostgreSQL</span>
+    <span class="arch-arrow">→</span>
+    <span class="arch-node">K3s HA</span>
+  </div>
+  <div class="card-tags">
+    <span class="tag">mqtt</span>
+    <span class="tag">dotnet</span>
+    <span class="tag">k3s</span>
+    <span class="tag">iot</span>
+    <span class="tag">zabbix</span>
+    <span class="tag">wpf</span>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="section-label mono">Writing — how it's done</p>
+
+<div class="card-grid">
+  {% for post in site.posts limit:4 %}
+  <a class="small-card" href="{{ post.url }}">
+    <div class="small-card-title">{{ post.title }}</div>
+    <p class="small-card-body">{{ post.description }}</p>
+    <p class="small-card-meta mono">{{ post.date | date: "%B %Y" }}</p>
+  </a>
+  {% endfor %}
+</div>

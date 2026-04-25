@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} — Ian MCNERLIN{% else %}Ian MCNERLIN — Platform & IoT Engineering{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div class="site">
+
+    <nav>
+      <a class="nav-name mono" href="/">IAN MCNERLIN</a>
+      <ul class="nav-links">
+        <li><a href="/writing/">writing</a></li>
+        <li><a href="/projects/">projects</a></li>
+        <li><a href="/about/">about</a></li>
+        <li><a href="https://github.com/ikmcn" target="_blank">github</a></li>
+      </ul>
+    </nav>
+
+    {{ content }}
+
+    <footer>
+      <span class="footer-text mono">Built with Jekyll &amp; GitHub Pages</span>
+      <div class="footer-links">
+        <a href="https://github.com/ikmcn" target="_blank">github.com/ikmcn</a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
