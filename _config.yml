@@ -1,8 +1,8 @@
-title: Ian McNamara
+title: Ian McNerlin
 description: Platform & IoT Engineering
 url: "https://ikmcn.github.io"
 baseurl: ""
-author: Ian McNamara
+author: Ian McNerlin
 email: ""
 github_username: ikmcn
 
@@ -19,3 +19,5 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  
+future: true
