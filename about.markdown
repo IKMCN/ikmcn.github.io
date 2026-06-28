@@ -8,13 +8,13 @@ permalink: /about/
   <div class="hero-tag">About</div>
   <h1 class="hero-title">Test manager turned <em>developer</em>.</h1>
   <p class="hero-body">
-    I work as a test manager on safety-critical railway systems — the kind where getting it wrong has real consequences. That background shapes how I think about software: architecture matters, edge cases matter, and proving something works is a different problem from making it work.
+    I work as a test manager... TBC.
   </p>
   <p class="hero-body">
     I'm working through the C# Academy curriculum to build genuine development skills — not AI-assisted shortcuts, but real understanding I can stand behind in a code review. Every project on this site has been built, tested and understood before it gets published.
   </p>
   <p class="hero-body">
-    Outside of software I work with IoT systems and have a background in platform engineering. The Solar Hub and TAP projects represent where those two worlds meet — real hardware, real data, real constraints.
+    Outside of software...TBC
   </p>
   <div class="stack-pills">
     <span class="pill">C#</span>
@@ -39,7 +39,7 @@ permalink: /about/
 
 <p class="section-label">Background</p>
 <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; font-weight:300;">
-  My day job is test management on a safety-critical railway possession management system — a system that sits inline on SIL-4 interlocking links and intercepts train route requests in real time. That work covers everything from functional testing through to performance, load, safety and security testing against real hardware. It's given me a deep appreciation for what production-ready actually means.
+  My day job is test management ...TBC
 </p>
 
 <div class="divider"></div>

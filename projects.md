@@ -8,7 +8,7 @@ permalink: /projects/
   <div class="hero-tag">Projects</div>
   <h1 class="hero-title">C# Academy <em>curriculum</em>.</h1>
   <p class="hero-body">
-    Every project here has been built against the C# Academy specification, reviewed by the community, and written up on the writing page. Code is on GitHub — click any card to go there.
+    Every project here has been built against the C# Academy specification, reviewed by the community, and written up on the project ReadMe page. Code is on GitHub — click any card to go there.
   </p>
 </div>
 
@@ -18,13 +18,13 @@ permalink: /projects/
 
 <div class="card-grid">
 
-  <a class="small-card" href="https://github.com/ikmcn/csharp-math-game" target="_blank">
+  <a class="small-card" href="https://github.com/IKMCN/CSharpAcademy-MathGame/blob/main/README.md" target="_blank">
     <div class="small-card-title">Math Game</div>
     <div class="small-card-body">A console math game covering the four operations. Random number generation, input validation, score tracking and game loop design.</div>
     <div class="small-card-meta">#csharp #console #basics</div>
   </a>
 
-  <div class="small-card" style="opacity:0.4; cursor:default;">
+    <a class="small-card" href="https://github.com/IKMCN/CSharpAcademy-Calculator/blob/main/README.md" target="_blank">
     <div class="small-card-title">Calculator</div>
     <div class="small-card-body">Console calculator built with Microsoft documentation. Coming soon.</div>
     <div class="small-card-meta">#csharp #console</div>
