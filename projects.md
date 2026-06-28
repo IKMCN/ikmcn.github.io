@@ -24,11 +24,11 @@ permalink: /projects/
     <div class="small-card-meta">#csharp #console #basics</div>
   </a>
 
-    <a class="small-card" href="https://github.com/IKMCN/CSharpAcademy-Calculator/blob/main/README.md" target="_blank">
+  <a class="small-card" href="https://github.com/IKMCN/CSharpAcademy-Calculator/blob/main/README.md" target="_blank">
     <div class="small-card-title">Calculator</div>
-    <div class="small-card-body">Console calculator built with Microsoft documentation. Coming soon.</div>
+    <div class="small-card-body">Console calculator built with Microsoft documentation. Basic arithmetic operations with input validation.</div>
     <div class="small-card-meta">#csharp #console</div>
-  </div>
+  </a>
 
   <div class="small-card" style="opacity:0.4; cursor:default;">
     <div class="small-card-title">Habit Logger</div>
